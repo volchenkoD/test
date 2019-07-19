@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main__page">
+        <div class="first__page-bg">
+            <div class="first__page-color"></div>
+            <div class="container">
+                <header class="header">
+                    <div class="logo">
+                            <svg width="44" height="50" class="logo__svg" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,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" height="50" width="44" id="Vector_Smart_Object"/>
+                                </g>
+                               </svg>
+                        <span class="logo__text">tajam</span>
+                    </div>
+                    <nav class="nav__links">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">expertise</a></li>
+                            <li><a href="#">teams</a></li>
+                            <li><a href="#">works</a></li>
+                            <li><a href="#">people say</a></li>
+                            <li><a href="#">contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="burger__menu">
+                        <div class="burger__menu-line1"></div>
+                        <div class="burger__menu-line2"></div>
+                        <div class="burger__menu-line3"></div>
+                    </div>
+                </header>
+                <div class="first__page">
+                    <h1>We Are Awesome Creative Agency</h1>
+                    <div class="line"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur in, perferendis magni voluptas
+                        iure esse tempore maxime odio est praesentium culpa labore tenetur velit nisi, at quia.
+                        Harum, aspernatur neque?</p>
+                        <a href="#" class="header__button">learn more</a>
+                    <div class="circle">
+                        <div class="circ"></div>
+                        <div class="circ"></div>
+                        <div class="circ"></div>
+                        <div class="circ"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container history">
+            <div class="bigLogo">
+                <img src="img/bigLogo.png" alt="Big size img">
+            </div>
+            <div class="history__text">
+                <h2 class="main__title">our story</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit blanditiis laboriosam ducimus autem,
+                    minima saepe eaque sed placeat perferendis assumenda neque modi ea dolore esse sequi nobis vitae quis
+                    nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus nesciunt qui distinctio, molestiae illo, cum perferendis voluptatem delectus cumque est quidem aspernatur? Iusto molestiae doloribus aut in earum fugit quos?</p>
+                <a href="#" class="header__button story__button">learn more</a>
+            </div>
+        </div>
+        <div class="video__section">
+            <div class="video__section-background"></div>
+                <div class="container">
+                    <div class="play">
+                            <div class="video">
+                                    <svg  width="37" height="45" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <metadata>
+                                        </metadata>
+                                        <g>
+                                         <title>Layer 1</title>
+                                         <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAtCAQAAACDxGrlAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBw8PHxRqm5IUAAAB/0lEQVRIx6XXS0gVcRTH8Z/SDTKqhVAp4a6HgQmFENSmRQQJFoJUEBW9QILatAsKQqFCClq1qk3RIoKeKr0WkS1aZyWhQQYZZEQhtfF+W1z93zP30cw9///sZobPnPN/nhHNjPCdIbahuEs8Yr5dY2kcNUOxTXEohvpDsg2x1kv9AvIM8zVgec75KdjKEu6b2N6y3UsdQ4huPhruOo0e6sjcjXrOG+wHR/2UEOsTqT6lzU8J0cMnw/XFUCJHn8E+sNNPFVIdNNwtVvgpIfYwGbCf9MZQooEBE9szNvopITYwbLgL1PkpIQ7yJWDv2RVDlaZ6myY/JUQHTwL2m5MxlBAH+Ba4ETpiKLGMKybVARb6qUKqLwI2wZoYSojDvGO2sMPFUqJpfv+tV1zbr0EtlySNxkTVblbAJOu8VAMXzQheZbF3BPeaJfSGLd551c7jwPzltHe25+g3ad2lxT6thdrHRGDG6Sl9npVq5YGJ5zK58neyUMm0XrK58nvpVLdJa4ZT1T+ZduLcS5w4q/7XCdWpOs4aZpzdacNSjepizECXWJA+wpWo1dxJdPOmbJO3nDpD3uzdJzKvgkAdR4hORk08N1mZHbJV36JEWmN01sIUqTwP+Wyg/kqnbzpVWiE/z1qalVO2bp+e6zMnVfybuFFbGVtONfOaaV6xI4ZB6B87buZIWV0iPwAAAABJRU5ErkJggg==" height="45" width="37" id="play"/>
+                                        </g>
+                                       </svg>
+                            </div>
+                            <p>watch our story</p>
+                    </div>
+                </div>
+        </div>
+        <div class="container expertise__section">
+            <div class="title__expertise">
+                <h2 class="main__title expertise__section-title">expertise</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="expertise__line"></div>
+            </div>
+            <div class="items__expertise">
+                    <div class="items">
+                            <svg width="49" height="42" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,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" height="42" width="49" id="PUT_YOUR_ICON_HERE"/>
+                                </g>
+                               </svg>
+                               <h3>web design & development</h3>
+                               <p>This is Photoshop's version  of Lorem Ipsum.
+                                    Proin gravida nibh vel velit auctor aliquet Aenean.
+                                </p>
+                    </div>
+                    <div class="items">
+                            <svg width="50" height="42" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,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" height="42" width="50" id="PUT_YOUR_ICON_HERE"/>
+                            </g>
+                           </svg>
+                               <h3>branding identity</h3>
+                               <p>This is Photoshop's version  of Lorem Ipsum.
+                                    Proin gravida nibh vel velit auctor aliquet Aenean.
+                                </p>
+                    </div>
+                    <div class="items">
+                            <svg width="28" height="42" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,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" height="42" width="28" id="PUT_YOUR_ICON_HERE"/>
+                            </g>
+                            </svg>
+                            <h3>mobile app</h3>
+                            <p>This is Photoshop's version  of Lorem Ipsum.
+                                    Proin gravida nibh vel velit auctor aliquet Aenean.
+                            </p>
+                    </div>
+                    <div class="items">
+                            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,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" height="50" width="50" id="PUT_YOUR_ICON_HERE"/>
+                            </g>
+                            </svg>
+                            <h3>search engine optimization</h3>
+                            <p>This is Photoshop's version  of Lorem Ipsum.
+                                    Proin gravida nibh vel velit auctor aliquet Aenean.
+                            </p>
+                    </div>
+                    <div class="items">
+                        <svg width="41" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <metadata>
+                        </metadata>
+                        <g>
+                         <title>Layer 1</title>
+                         <image xlink:href="data:img/png;base64,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" height="50" width="41" id="PUT_YOUR_ICON_HERE"/>
+                        </g>
+                        </svg>
+                           <h3>game development</h3>
+                           <p>This is Photoshop's version  of Lorem Ipsum.
+                                Proin gravida nibh vel velit auctor aliquet Aenean.
+                            </p>
+                    </div>
+                    <div class="items">
+                            <svg width="50" height="46" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,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" height="46" width="50" id="PUT_YOUR_ICON_HERE"/>
+                            </g>
+                            </svg>
+                               <h3>made with love</h3>
+                            <p>This is Photoshop's version  of Lorem Ipsum.
+                                Proin gravida nibh vel velit auctor aliquet Aenean.
+                            </p>
+                    </div>
+            </div>
+        </div>
+        <div class="ourTeam__section">
+            <div class="first__page-color"></div>
+            <div class="container team__container">
+                    <div class="title__expertise title__team">
+                        <h2 class="main__title expertise__section-title">meet our amazing team</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        <div class="expertise__line"></div>
+                    </div>
+                    <div class="team__card">
+                            <div class="cards">
+                                        <img src="#" alt="photo" class="noPhoto">
+                                       <h3>semf ucuk</h3>
+                                       <p>seo & founder
+                                        </p>
+                            </div>
+                            <div class="cards">
+                                        <img src="#" alt="photo" class="noPhoto">
+                                       <h3>dik adalin</h3>
+                                       <p>engineering
+                                        </p>
+                            </div>
+                            <div class="cards">
+                                    <img src="#" alt="photo" class="noPhoto">
+                                    <h3>jeng kol</h3>
+                                    <p>designer</p>
+                            </div>
+                            <div class="cards">
+                                    <img src="#" alt="photo" class="noPhoto">
+                                    <h3>pet romak</h3>
+                                    <p>marketing
+                                    </p>
+                            </div>
+                    </div>
+                    <div class="team__button">
+                        <p>Become part of our dream team, let's join us!</p>
+                        <a href="#" class="header__button">we are hiring</a>
+                    </div>
+            </div>
+        </div>
+        <div class="our__works">
+                <div class="container our__works-container">
+                    <h2>our works</h2>
+                    <a href="#">See All Project in dribbble <img src="img/right.png" alt=""></a>
+                </div>
+                <div class="example">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+                <div class="container our__works-button">
+                        <a href="#" class="header__button works__button">load more</a>
+                </div>
+        </div>
+        <div class="photo__team">
+                <div class="first__page-color"></div>
+                <div class="container photo__team-container">
+                    <img src="img/title.png" alt="title" class="title__img">
+                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
+                        sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                        Sed non  mauris vitae erat consequat auctor eu in elit.
+                    </p>
+                    <div class="slider">
+                        <h3>jane galadriel</h3>
+                        <p>ceo tengkuper</p>
+                        <div class="slider__img">
+                            <div class="back"><img src="img/back.png" alt="go back" id="back"></div>
+                                <img src="img/slider/img1.png" alt="first img" class="small__img">
+                                <img src="img/slider/img2.png" alt="first img"  class="small__img">
+                                <img src="img/slider/img3.png" alt="first img" class="small__img">
+                                <img src="img/slider/img4.png" alt="first img"  class="small__img">
+                                <img src="img/slider/img5.png" alt="first img"  class="small__img">
+                            <div class="next"><img src="img/forward.png" alt="next" id="next"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="container partner__section">
+            <div class="form__section">
+                <h2 class="main__title">give us a good news</h2>
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <a href="#" type="submit" class="submit__button">submit</a>
+                </form>
+            </div>
+            <div class="partner">
+                <h2 class="main__title partner__title">our happy client</h2>
+                <div class="client">
+                    <div class="left-part">
+                        <img src="img/brends/Zara_Logo.png" alt="">
+                        <img src="img/brends/1280px-Barneys_New_York_Logo.png" alt="">
+                        <img src="img/brends/Calvin_klein_logo.png" alt="">
+                        <img src="img/brends/Converse_logo.png" alt="">
+                        <img src="img/brends/1280px-Levi's_logo.png" alt="">
+                    </div>
+                    <div class="right-part">
+                        <img src="img/brends/Logo_of_Mango_(new).png" alt="">
+                        <img src="img/brends/1280px-Gucci_Logo.png" alt="">
+                        <img src="img/brends/1280px-Logo_NIKE.png" alt="">
+                        <img src="img/brends/Puma_Logo.png" alt="">
+                        <img src="img/brends/Billabong.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__section">
+            <div class="first__page-color"></div>
+            <div class="container footer__container">
+                <div class="logo__section">
+                    <div class="logo">
+                        <svg width="44" height="50" class="logo__svg" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,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" height="50" width="44" id="Vector_Smart_Object"/>
+                            </g>
+                           </svg>
+                    <span class="logo__text">tajam</span>
+                </div>
+                <p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+                </div>
+                <div class="adress">
+                    <h3>our studio</h3>
+                    <div class="pointer">
+                        <svg width="14" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAATCAQAAAAKCfQfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAPCAKTtuQaAAABI0lEQVQoz1WPvUqcURRF14xRsJBhioBNQC0UfAMhSZNnmEZCSDNMIVooKIQgBE2QIDZBYZpBEgLBHwgpfAMhjY2Yp1BwTYpAQNgW3zd/t9p7rXMv5xJC8Kkd741Rvzpd0EqAboMTuhxzCSzxljqva9+BYMP4uZgt3/lkXA44ZTwYViH40VjHbz6UoOWtd66U7b9nGPdDcM146BfjZgjuGIyvQjDuhuC2sRp8YapAFboV4AaAPwWhAvjXTgj+ML70ufFnCLb9hx9MucIvY7woW9zDMWOzBPMulOmNcZzgUe/u0D9jO/Ti+xH1rhgvyqpxsq8mjOt9Gbz1qi9/e1ekHpg1tkKwaZwbkcEN44zPjFs9NrzGqTGeD0glDE73mie1xUF/BIF4Krpuvw4hAAAAAElFTkSuQmCC" height="19" width="14" id="big104"/>
+                            </g>
+                        </svg>
+                        <p class="pointer__text">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                            11480 - Indonesia</p>
+                    </div>
+                    <div class="phone">
+                        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <metadata>
+                            </metadata>
+                            <g>
+                             <title>Layer 1</title>
+                             <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAQAAACRZI9xAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAPByjPlTEDAAABE0lEQVQoz3XQsUvUcRjH8ddPfgROv5IodIimo7qhqSiXBGlw0a04Iom4TXALl2vo39ClliNtcRIlKWhQukEwxKD9vAsJH1ua4tugUna/3/MZnw/v98OThcrZd9Pt4stQZaHtstd2j+/kFYWnGgo/DetkpaK6PVPWcdFRuaiODnilVy5accsPVxya96jq3C4OfbZdvCunTFl0TdNdOWWUe9Y88cuSB34zSJnw0QttScsnECepxfMQ4lmkmAuRYvlkk04pTYsy9/W89NCmZMPjM2yON2ZN6+hjxJjkrcY/6vga/bh6qrsQrUjRCn+T5G7Y8h2Meq9u0ofz9w+pGbdpxpIDXcP/F8iC63Zc8s2C1cEnFf4Aqo9gDQs805cAAAAASUVORK5CYII=" height="17" width="17" id="phone351"/>
+                            </g>
+                        </svg>
+                        <p>(+62) 21-2224 3333</p>
+                    </div>
+                </div>
+                <div class="sochial">
+                    <h3>stayin touch</h3>
+                    <form action="">
+                        <input type="text" placeholder="Subscribe our newsletter">
+                        <a href="#">
+                            <div class="sent">
+                                <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <metadata>
+                                    </metadata>
+                                    <g>
+                                     <title>Layer 1</title>
+                                     <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAVLwpWGfjrAAABYUlEQVQ4y5XQu2tUURTF4Q8F04gvfBQKFhGxtFF8YCMo0UIUgiSIgn/ACJrCKq2NNnaWQmIRH6WKwqCIkMYiBkMiBJtBBjSCgrEyWTY34zVOZu6s0+y99m+dzTn0on5jmtXx/e5ZFu+q4Ye9luLs7Y4f8VbMmxUx3g0/bUosOaXmvbrY0Qk/a04suYYhcci8l2vjwxrim6vgtthuSGxtj1+2IJqGi35cHEA8bIfX/BAzzrWc56If90XfanzEsphysuRNil3YKMbKcJ/rFkTd0X8umfPLJvBIbPg7uCFi0vpVW7/4XnhbxN3y6IwXoulSydts0cdWV5f/nz3gs/jqAtgppluzPeJW+88dFfHMoJ9elfw37XasaLcnIh6XvH3ipo46L56W+ulOO1Y0IY4X9UFR6x7ZJj4U9azf3QNwR5zAMXGlWoT4hIbFqgFGxANxsXqEhpjpJcCgGOgtss7oWqM/YtZ7Cz7mFZAAAAAASUVORK5CYII=" height="25" width="25" id="paper122"/>
+                                    </g>
+                                   </svg>
+                            </div>
+                        </a>
+                    </form>
+                    <div class="sichial__links">
+                        <div class="sochial__item">
+                            <svg width="7" class="facebook" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAPCAQAAACCCB01AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAWFQif+PnnAAAAh0lEQVQI123HsWlCYQBG0ePzB0FEIYWQyk4cwsIpHMIpXCELZADBWsgKgpW9YKONoEXwIciXIrxC8BQXrojM8pNjTtmKfOaSf4+CqQ9cbBwKumBlQTEyBF1jz1b2RnqoXZ1bqXU0du3lr9oEW9/WIvMkyVdEhQHoQ4XQtPLizRaaFtxdFTf4A5UVNxCGm5TKAAAAAElFTkSuQmCC" height="15" width="7" id="facebook25"/>
+                                </g>
+                               </svg>
+                        </div>
+                        <div class="sochial__item">
+                            <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAQAAADljHTpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAWCxq4ALdwAAAApElEQVQY02WPPQ4BURRGP5Mn0UwoFIJENwlrsAStXahUdiCxAlGJqLQKCxiJ5u1A72cajYQgjmK8N8nMueXJTc4nDCHyV2bOkRVd+lRFSMLQyz2OG5EoATCjjRAZS2rCMAHgxZYFXy87SFSI+VCkiQI9dVCgPBedpDQjLvyNEX85zalr2u4mDDh79SZyss6INdYrS8+tNnroroZaSpTIaqdNVvUDBRnMwcF6LlgAAAAASUVORK5CYII=" height="11" width="14" id="twitter16"/>
+                                </g>
+                               </svg>
+                        </div>
+                        <div class="sochial__item">
+                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAWCyvp3rdKAAABLklEQVQoz1XRPUiVARjF8YNcQcghkKChUFyiwYawWmozKHBpMbSlBhcVDOdoaQhDA8VFHBrCyaHBwUXEGnOqBomuix8oys2GPqiEX8N97+2VZ3k4/B+ewzmR5vSZUbVl2YP/amO5Yh9MmreBr66VgTuYNe6kwNtMYqABnMdTEbv2C+QM6KoDn30o5A48FBMY8sqeRC8loyt458R90YpblfQneZzudOZSLuYwSXsqSZK/2cpYJRfyLU/yJ0f5mGdZzFQGM5DL+ZXN7ORcvLdWevHcd9Rsqqr5YSHmHTWDgmGfLBXKgddxFR1iEAsiRpu2uR2x7Y1OjBbyWVwXy47rOXSBkZKTn8bdRE8j6nt4oaUJzIFH5bJuqOGtl6at+23b3dNtRgxb9UXVWv22Pv8AlDJAmoQgNdMAAAAASUVORK5CYII=" height="16" width="16" id="dribbble4"/>
+                                </g>
+                               </svg>
+                        </div>
+                        <div class="sochial__item">
+                            <svg width="14" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAALCAQAAADljHTpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAWCxq4ALdwAAAApElEQVQY02WPPQ4BURRGP5Mn0UwoFIJENwlrsAStXahUdiCxAlGJqLQKCxiJ5u1A72cajYQgjmK8N8nMueXJTc4nDCHyV2bOkRVd+lRFSMLQyz2OG5EoATCjjRAZS2rCMAHgxZYFXy87SFSI+VCkiQI9dVCgPBedpDQjLvyNEX85zalr2u4mDDh79SZyss6INdYrS8+tNnroroZaSpTIaqdNVvUDBRnMwcF6LlgAAAAASUVORK5CYII=" height="11" width="14" id="twitter16"/>
+                                </g>
+                               </svg>
+                        </div>
+                        <div class="sochial__item">
+                            <svg width="15" height="14" class="google" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAQAAABag45kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAWEzTmzSLmAAAA6ElEQVQY01WQIUhDYRRGj4NZDBZZ2IpNfIiMgWMIKjaTYLGtm1eWTBpcERZXFh4YBINBQcQHBkGGYWkgsmDWYnEiKGdl/+O97yuX+13OvVxEXDa246v/3nvsonjrhQjikhNbYqS+i4gv3oX4UmfNtrrnmWN//HZsvwDsEHQFNBiR8MUnCUPEG7UuYkndF3HkY4CvqloVYx9ma849EZkTYJ1T/qjwyzZ5GbygXkveoVjzQNU4HxeAGglHlDlkQJNeHh6p3XT+SS1l4c/pUxArapSFzwMrKWyTCW9Z+IYfDt2yKNYcuJs9bQoqG9DJVNIRAQAAAABJRU5ErkJggg==" height="14" width="15" id="google26"/>
+                                </g>
+                               </svg>
+                        </div>
+                        <div class="sochial__item">
+                            <svg width="17" height="11" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <metadata>
+                                </metadata>
+                                <g>
+                                 <title>Layer 1</title>
+                                 <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAQAAAAzKa6MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxAWFA8Yh10FAAAAxElEQVQY033Pvy5EYRAF8N/3ueH6VyhoBIVeFCqdiERFt9U2HkFEKZKt1UrRaRQeQqXkJRSisbHYzY5i7XWvwmkm58ycMzMpkn3HlswoTcpCGBr48O7FpTuxEb34D9vZjtIIfR0XQhO72WpFBm6canlojCxmcxVJlnHr0LnPSp3Ocs0xWvKsY9PX2JgboemnrmkrxlpRiwxvKB05sV6p/cJrLWXCljMHjeRu4fH3MFdmrfx5+inFgmt7ekjmDXVr7Sn32t+E3EhkfazPpAAAAABJRU5ErkJggg==" height="11" width="17" id="youtube13"/>
+                                </g>
+                               </svg>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav container">
+                <nav>
+                    <ul>
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">terms & condition</a></li>
+                        <li><a href="#">privacy</a></li>
+                    </ul>
+                </nav>
+                <div class="copy">
+                    <p>Copyright <span>&#169</span> 2015 - Tajem Creative</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
